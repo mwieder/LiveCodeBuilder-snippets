@@ -1,0 +1,13 @@
+require
+{
+  variable: {name: "mUseTimer", type: "Boolean"},
+  handler: {name: "nextFullSecond"},
+  property: {name: "useTimer", set: "setUseTimer"},
+  handler: {name: "setUseTimer"}
+}
+
+public handler OnOpen()
+	if mUseTimer then
+		schedule timer in nextFullSecond() seconds
+	end if
+end handler

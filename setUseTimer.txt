@@ -1,0 +1,15 @@
+require
+{
+  variable: {name: "mUseTimer", type: "Boolean"},
+  handler: {name: "nextFullSecond"},
+  property: {name: "useTimer", set: "setUseTimer"},
+  handler: {name: "setUseTimer"}
+}
+
+private handler setUseTimer(in pBool as Boolean) returns nothing
+	put pBool into mUseTimer
+	if pBool then
+		schedule timer in nextFullSecond() seconds -- start the timer
+	end if
+	redraw all
+end handler
