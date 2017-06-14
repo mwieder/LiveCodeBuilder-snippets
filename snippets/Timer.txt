@@ -3,11 +3,7 @@
   {
   	"handlers": ["setUseTimer", "nextFullSecond"],
   	"variables": ["mUseTimer"],
-    "mUseTimer":
-    {
-      "is": "variable",
-      "type": "Boolean"
-    }
+    "mUseTimer": {"type": "Boolean"}
   }
 }
 

@@ -2,8 +2,8 @@
   "require":
   {
   	"handlers": ["nextFullSecond"],
-  	"variables: ["mUseTimer"],
-    "variable": {"name": "mUseTimer", "type": "Boolean"}
+  	"variables": ["mUseTimer"],
+    "mUseTimer": {"type": "Boolean"}
  }
 }
 
