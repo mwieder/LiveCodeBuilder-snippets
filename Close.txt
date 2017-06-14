@@ -1,10 +1,11 @@
-require:
 {
-  variable: {name: "mUseTimer", type: "Boolean"},
-  property: {name: "useTimer", set: "setUseTimer"},
-  handler: {name: "setUseTimer"}
+  "require":
+  {
+    "variable": {"name": "mUseTimer", "type": "Boolean"},
+    "property": {"name": "useTimer", "set": "setUseTimer"},
+    "handler": {"name": "setUseTimer"}
+  }
 }
-
 public handler OnClose()
 	set mUseTimer to false
 	cancel timer
