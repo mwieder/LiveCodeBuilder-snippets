@@ -1,4 +1,4 @@
-require
+require:
 {
   variable: {name: "mUseTimer", type: "Boolean"},
   property: {name: "useTimer", set: "setUseTimer"},

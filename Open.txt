@@ -1,4 +1,4 @@
-require
+require:
 {
   variable: {name: "mUseTimer", type: "Boolean"},
   handler: {name: "nextFullSecond"},
