@@ -3,3 +3,5 @@ Open
 Close
 setUseTimer
 nextFullSecond
+StrokeWidth
+
