@@ -1,0 +1,20 @@
+{
+  "require":
+	{
+		"property": "roundWRadius",
+		"metadata": ["roundWRadius.editor","roundWRadius.min","roundWRadius.max","roundWRadius.step","roundWRadius.default"],
+ 		"roundWRadius.editor": {"value": "com.livecode.pi.number"},
+		"roundWRadius.min": {"value": "0"},
+		"roundWRadius.max": {"value": "64"},
+		"roundWRadius.step": {"value": "1"},
+		"roundWRadius.default": {"value": "4"},
+    "variable": ["RoundRadius"]
+	}
+}
+
+-- author: Hermann Hoch / Mark Wieder
+-- contact hh@hyperhh.de
+private handler setRoundRadius(in pNum as Number) returns nothing
+	put pNum into mRoundRadius
+	redraw all
+end handler

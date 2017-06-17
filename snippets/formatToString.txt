@@ -1,0 +1,6 @@
+
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
+handler formatToString(in pEach as optional any) returns optional any
+    return pEach formatted as string
+end handler

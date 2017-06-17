@@ -7,6 +7,8 @@
  }
 }
 
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
 private handler setUseTimer(in pBool as Boolean) returns nothing
 	put pBool into mUseTimer
 	if pBool then

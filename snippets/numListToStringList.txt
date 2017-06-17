@@ -1,0 +1,12 @@
+{
+  "require":
+	{
+		"handlers": ["formatToString","ApplyToList"]
+	}
+}
+
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
+handler numListToStringList(in pNumList as List) returns List
+    return applyToList(formatToString,pNumList)
+end handler

@@ -1,0 +1,22 @@
+{
+  "require":
+	{
+		"handler": ["hhColorToString","hhStringToColor"],
+		"property": "strokeColor",
+		"variable", ["StrokeColor"],
+		"metadata": ["strokewidth.editor","strokewidth.section"],
+ 		"strokeColor.editor": {"value": "com.livecode.pi.colorwithalpha"},
+		"strokeColor.section": {"value": "Colors"}
+	}
+}
+
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
+private handler getStrokeColor() returns String
+	return hhColorToString(mStrokeColor)
+end handler
+
+private handler setStrokeColor(in pColor as String) returns nothing
+	put hhStringToColor(pColor) into mStrokeColor
+	redraw all
+end handler

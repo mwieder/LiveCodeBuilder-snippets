@@ -1,0 +1,12 @@
+{
+  "require":
+  {
+  	"handlers": ["numListToString"]
+ }
+}
+
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
+public handler postRect(in pRect as List)
+	post "set rect of me to " & numListToString(pRect)
+end handler

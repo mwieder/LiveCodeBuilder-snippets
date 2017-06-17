@@ -1,0 +1,31 @@
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de]
+private handler hhStringToColor(in pString as String) returns Color
+	if the number of chars in pString is 0 then
+		 return color [0.0, 0.0, 0.0, 1.0]
+	end if
+	variable tList as List
+	split pString by "," into tList
+	variable tNum as Number
+	put the number of elements in tList into tNum
+	variable tR as Number
+	variable tG as Number
+	variable tB as Number
+	variable tA as Number
+	put ((element 1 of tList) parsed as number) into tR
+	put ((element 2 of tList) parsed as number) into tG
+	put ((element 3 of tList) parsed as number) into tB
+	if tNum = 4 then -- put first tA in range 0-1
+		put ((element 4 of tList) parsed as number) into tA
+		if not ("." is in pString) then
+			put tA/255 into tA
+		end if
+	else
+		put 1.0 into tA
+	end if
+	if "." is in pString then
+		return color [tR, tG, tB, tA]
+	else
+		return color [tR/255, tG/255, tB/255, tA]
+	end if
+end handler

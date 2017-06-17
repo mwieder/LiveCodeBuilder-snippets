@@ -2,7 +2,7 @@
   "require":
 	{
 		"property": "StrokeWidth",
-		"metadata": ["strokewidth.editor","strokewidth..min","strokewidth.max","strokewidth.step","strokewidth.section","strokewidth.default"],
+		"metadata": ["strokewidth.editor","strokewidth.min","strokewidth.max","strokewidth.step","strokewidth.section","strokewidth.default"],
  		"strokeWidth.editor": {"value": "com.livecode.pi.number"},
 		"strokeWidth.min": {"value": "1"},
 		"strokeWidth.max": {"value": "256"},
@@ -12,8 +12,9 @@
 	}
 }
 
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
 private handler setStrokeWidth(in pNum as Number) returns nothing
 	put pNum into mStrokeWidth
 	redraw all
 end handler
-

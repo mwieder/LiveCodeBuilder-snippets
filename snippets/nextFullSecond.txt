@@ -1,3 +1,5 @@
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
 private handler nextFullSecond() returns Number
     return 1 - the universal time mod 1
 end handler

@@ -7,6 +7,8 @@
  }
 }
 
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
 public handler OnOpen()
 	if mUseTimer then
 		schedule timer in nextFullSecond() seconds

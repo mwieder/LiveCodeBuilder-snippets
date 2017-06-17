@@ -1,0 +1,22 @@
+{
+  "require":
+	{
+		"type": ["ApplyHandler"],
+    "ApplyHandler":
+    {
+      "type": "handler",
+      "value": "(in pValue as optional any) returns optional any"
+    }
+	}
+}
+
+-- author: Dr. Peter TB Brett
+-- contact peter.brett@livecode.com
+handler applyToList(in pHandler as ApplyHandler, in pValues as List) returns List
+   variable tResult as List
+   variable tValue as optional any
+   repeat for each element tValue in pValues
+      push pHandler(tValue) onto tResult
+   end repeat
+   return tResult
+end handler

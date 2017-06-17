@@ -1,0 +1,14 @@
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de]
+-- Returns the color as a four-item string
+private handler hhColorToString(in pColor as Color) returns String
+	variable tString as String
+	if pColor is nothing then
+		return "0,0,0,255"
+	end if
+	put (the trunc of ((the red of pColor) * 255)) formatted as string into tString
+	put "," & (the trunc of ((the green of pColor) * 255)) formatted as string after tString
+	put "," & (the trunc of ((the blue of pColor) * 255)) formatted as string after tString
+	put "," & (the trunc of ((the alpha of pColor) * 255)) formatted as string after tString
+	return tString
+end handler

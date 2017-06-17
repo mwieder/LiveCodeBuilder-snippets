@@ -1,0 +1,16 @@
+{
+  "require":
+	{
+		"handlers": ["formatToString","ApplyToList"]
+	}
+}
+
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
+handler numListToString(in pNumList as List) returns String
+	variable tList as List
+	variable tString as String
+	set tList to applyToList(formatToString,pNumList)
+    combine tList with "," into tString
+    return tString
+end handler

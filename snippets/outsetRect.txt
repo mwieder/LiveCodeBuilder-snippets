@@ -1,0 +1,7 @@
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de]
+-- negative pWidth does an inset
+private handler outsetRect(in pWidth as Number, pRect as Rectangle) returns Rectangle
+	return rectangle [ - pWidth + the left of pRect, - pWidth + the top of pRect, \
+			pWidth + the right of pRect, pWidth + the bottom of pRect]
+end handler
