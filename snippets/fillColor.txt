@@ -2,9 +2,9 @@
   "require":
 	{
 		"handler": ["hhColorToString","hhStringToColor"],
-		"property": "fillColor",
+		"property": ["fillColor"],
 		"variable": ["FillColor"],
-		"metadata": ["strokewidth.editor","fillColor.section"],
+		"metadata": ["fillColor.editor","fillColor.section"],
  		"fillColor.editor": {"value": "com.livecode.pi.colorwithalpha"},
 		"fillColor.section": {"value": "Colors"}
 	}
