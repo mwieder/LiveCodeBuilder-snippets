@@ -4,4 +4,14 @@ Close
 setUseTimer
 nextFullSecond
 StrokeWidth
-
+applyToList
+fillColor
+formatToString
+hhColorToString
+hhStringToColor
+numListToString
+nulListToStringList
+outsetRect
+postRect
+roundWRadius
+strokeColor
