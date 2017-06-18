@@ -1,7 +1,7 @@
 {
   "require":
 	{
-		"property": "StrokeWidth",
+		"properties": ["StrokeWidth"],
 		"metadata": ["strokewidth.editor","strokewidth.min","strokewidth.max","strokewidth.step","strokewidth.section","strokewidth.default"],
  		"strokeWidth.editor": {"value": "com.livecode.pi.number"},
 		"strokeWidth.min": {"value": "1"},

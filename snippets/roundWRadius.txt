@@ -1,14 +1,14 @@
 {
   "require":
 	{
-		"property": "roundWRadius",
+		"properties": ["roundWRadius"],
 		"metadata": ["roundWRadius.editor","roundWRadius.min","roundWRadius.max","roundWRadius.step","roundWRadius.default"],
  		"roundWRadius.editor": {"value": "com.livecode.pi.number"},
 		"roundWRadius.min": {"value": "0"},
 		"roundWRadius.max": {"value": "64"},
 		"roundWRadius.step": {"value": "1"},
 		"roundWRadius.default": {"value": "4"},
-    "variable": ["RoundRadius"]
+    "variables": ["RoundRadius"]
 	}
 }
 
