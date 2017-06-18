@@ -3,7 +3,7 @@
 	{
 		"handler": ["hhColorToString","hhStringToColor"],
 		"property": "fillColor",
-		"variable", ["FillColor"],
+		"variable": ["FillColor"],
 		"metadata": ["strokewidth.editor","fillColor.section"],
  		"fillColor.editor": {"value": "com.livecode.pi.colorwithalpha"},
 		"fillColor.section": {"value": "Colors"}
