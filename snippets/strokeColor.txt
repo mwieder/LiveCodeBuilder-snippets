@@ -3,7 +3,7 @@
 	{
 		"handlers": ["hhColorToString","hhStringToColor"],
 		"properties": ["strokeColor"],
-		"variables", ["StrokeColor"],
+		"variables": ["StrokeColor"],
 		"metadata": ["strokewidth.editor","strokewidth.section"],
  		"strokeColor.editor": {"value": "com.livecode.pi.colorwithalpha"},
 		"strokeColor.section": {"value": "Colors"}

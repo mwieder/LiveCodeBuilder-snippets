@@ -10,7 +10,7 @@ formatToString
 hhColorToString
 hhStringToColor
 numListToString
-nulListToStringList
+numListToStringList
 outsetRect
 postRect
 roundWRadius
