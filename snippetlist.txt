@@ -5,8 +5,10 @@ setUseTimer
 nextFullSecond
 StrokeWidth
 applyToList
+builtin
 fillColor
 formatToString
+hexToDec
 hhColorToString
 hhStringToColor
 numListToString

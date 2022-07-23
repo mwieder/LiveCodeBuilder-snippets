@@ -1,0 +1,35 @@
+-- author: Peter Brett
+-- contact @PeterTBBrett
+-- Executes a shell command and returns the system status
+module org.example.system
+
+use com.livecode.foreign
+
+private foreign handler _system(in pCommand as ZStringNative) \
+      returns CInt binds to "system"
+
+/*
+Run the shell command  and wait for it to finish.
+Returns the exit status of if the command completed, and nothing
+if an error occurred or the command exited abnormally.
+*/
+public handler System(in pCommand as String) \
+      returns optional Number
+
+   variable tStatus as Number
+   put _system(pCommand) into tStatus
+
+   -- Check for error
+   if tStatus is -1 then
+      return nothing
+   end if
+
+   -- Check for abnormal exit
+   if (127 bitwise and tStatus) is not 0 then
+      return nothing
+   end if
+
+   -- Return exit status
+   return 255 bitwise and (tStatus shifted right by 8 bitwise)
+
+end module

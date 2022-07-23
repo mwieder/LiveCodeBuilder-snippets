@@ -1,0 +1,20 @@
+
+-- author: Hermann Hoch
+-- contact hh@hyperhh.de
+handler hexToDec(in pText as String) returns Number
+   variable tChar as String
+   variable hexList as List
+   variable tNum as Number
+   variable tSum as Number
+   variable tCount as Number
+   put 0 into tSum
+   put ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"] into hexList
+   put the number of chars in pText into tCount
+   repeat for each char tChar in pText
+      subtract 1 from tCount
+      put -1+the index of tChar in hexList into tNum
+      add (tNum * (16^tCount)) to tSum
+   end repeat
+   return tSum
+end handler
+

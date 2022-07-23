@@ -1,0 +1,29 @@
+-- author: Brian Milby
+private __safe foreign handler \
+MCDataCreateWithBytesAndRelease( \
+	in pBytes as Pointer, \
+	in pCount as LCUIndex, \
+	out rData as Data) \
+	returns CBool binds to "<builtin>"
+
+private __safe foreign handler \
+MCDataGetBytePtr( \
+	in pData as Data) \
+	returns Pointer binds to "<builtin>"
+
+private __safe foreign handler \
+MCDataGetLength( \
+	in pData as Data) \
+	returns LCUIndex binds to "<builtin>"
+
+private __safe foreign handler \
+MCMemoryAllocate( \
+	in pSize as LCUIndex, \
+	out rBlock as Pointer) \
+	returns CBool binds to "<builtin>"
+
+private __safe foreign handler \
+MCMemoryDeallocate( \
+	in pBlock as Pointer) \
+	returns nothing binds to "<builtin>"
+
